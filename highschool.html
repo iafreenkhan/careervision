@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High School Pathway</title>
+    
+    <link rel="stylesheet" href="hs.css">
+</head>
+<body>
+
+    <!-- Container for the Survey Form -->
+    <div>
+        <h1>High School Pathway</h1>
+        <form id="surveyForm" method="POST" action="http://127.0.0.1:5000/recommend">
+
+
+            <!-- Question 1 -->
+            <div>
+                <label>1. Which subjects do you enjoy the most?</label>
+                <div>
+                    <input type="radio" id="q1a" name="subjects" value="maths" required>
+                    <label for="q1a"> Mathematics and Physics</label>
+                </div>
+                <div>
+                    <input type="radio" id="q1b" name="subjects" value="business" required>
+                    <label for="q1b">Business Studies and Economics</label>
+                </div>
+                <div>
+                    <input type="radio" id="q1c" name="subjects" value="history" required>
+                    <label for="q1c"> History and Literature</label>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div>
+                <label>2. How do you prefer to solve problems?</label>
+                <div>
+                    <input type="radio" id="q2a" name="problem-solving" value="logic" required>
+                    <label for="q2a">By using logic and experiments</label>
+                </div>
+                <div>
+                    <input type="radio" id="q2b" name="problem-solving" value="market-analysis" required>
+                    <label for="q2b"> By analyzing market trends and data</label>
+                </div>
+                <div>
+                    <input type="radio" id="q2c" name="problem-solving" value="creative" required>
+                    <label for="q2c"> By thinking creatively and expressing ideas</label>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div>
+                <label>3. What kind of career do you see yourself in?</label>
+                <div>
+                    <input type="radio" id="q3a" name="career" value="scientist" required>
+                    <label for="q3a"> Engineer, Doctor, Scientist</label>
+                </div>
+                <div>
+                    <input type="radio" id="q3b" name="career" value="business" required>
+                    <label for="q3b"> Accountant, Banker, Entrepreneur</label>
+                </div>
+                <div>
+                    <input type="radio" id="q3c" name="career" value="artist" required>
+                    <label for="q3c"> Writer, Artist, Historian</label>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div>
+                <label>4. Which of the following excites you more?</label>
+                <div>
+                    <input type="radio" id="q4a" name="excitement" value="science" required>
+                    <label for="q4a"> New scientific discoveries and technological advancements</label>
+                </div>
+                <div>
+                    <input type="radio" id="q4b" name="excitement" value="business" required>
+                    <label for="q4b"> Building a successful business or understanding markets</label>
+                </div>
+                <div>
+                    <input type="radio" id="q4c" name="excitement" value="creativity" required>
+                    <label for="q4c"> Creating art, films, or writing stories</label>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div>
+                <label>5. What are your strongest skills?</label>
+                <div>
+                    <input type="radio" id="q5a" name="skills" value="analytical" required>
+                    <label for="q5a"> Analytical thinking and solving complex equations</label>
+                </div>
+                <div>
+                    <input type="radio" id="q5b" name="skills" value="financial" required>
+                    <label for="q5b"> Managing finances and understanding economics</label>
+                </div>
+                <div>
+                    <input type="radio" id="q5c" name="skills" value="creative-writing" required>
+                    <label for="q5c"> Creative writing or artistic expression</label>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div>
+                <label>6. How do you prefer to learn?</label>
+                <div>
+                    <input type="radio" id="q6a" name="learning" value="experiments" required>
+                    <label for="q6a"> Through experiments and research</label>
+                </div>
+                <div>
+                    <input type="radio" id="q6b" name="learning" value="case-studies" required>
+                    <label for="q6b"> By analyzing case studies and financial trends</label>
+                </div>
+                <div>
+                    <input type="radio" id="q6c" name="learning" value="discussion" required>
+                    <label for="q6c"> By discussing ideas and exploring creativity</label>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div>
+                <label>7. How do you like to work on projects?</label>
+                <div>
+                    <input type="radio" id="q7a" name="projects" value="structure" required>
+                    <label for="q7a"> With structure, logic, and precision</label>
+                </div>
+                <div>
+                    <input type="radio" id="q7b" name="projects" value="strategizing" required>
+                    <label for="q7b"> By planning, strategizing, and taking calculated risks</label>
+                </div>
+                <div>
+                    <input type="radio" id="q7c" name="projects" value="brainstorming" required>
+                    <label for="q7c"> By brainstorming and expressing ideas freely</label>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div>
+                <label>8. Which area of the real world interests you the most?</label>
+                <div>
+                    <input type="radio" id="q8a" name="interests" value="universe" required>
+                    <label for="q8a"> Discovering how the universe and nature work</label>
+                </div>
+                <div>
+                    <input type="radio" id="q8b" name="interests" value="business-economy" required>
+                    <label for="q8b"> Understanding how businesses and economies function</label>
+                </div>
+                <div>
+                    <input type="radio" id="q8c" name="interests" value="society" required>
+                    <label for="q8c"> Exploring human culture, history, and society</label>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div>
+                <label>9. Which activities do you find most enjoyable?</label>
+                <div>
+                    <input type="radio" id="q9a" name="activities" value="experimenting" required>
+                    <label for="q9a"> Conducting experiments or solving puzzles</label>
+                </div>
+                <div>
+                    <input type="radio" id="q9b" name="activities" value="planning" required>
+                    <label for="q9b"> Planning events or managing budgets</label>
+                </div>
+                <div>
+                    <input type="radio" id="q9c" name="activities" value="creating" required>
+                    <label for="q9c"> Creating artwork, writing, or performing</label>
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div>
+                <label>10. How do you approach challenges?</label>
+                <div>
+                    <input type="radio" id="q10a" name="challenges" value="analyzing" required>
+                    <label for="q10a"> By analyzing them step-by-step</label>
+                </div>
+                <div>
+                    <input type="radio" id="q10b" name="challenges" value="strategizing" required>
+                    <label for="q10b"> By strategizing and making calculated decisions</label>
+                </div>
+                <div>
+                    <input type="radio" id="q10c" name="challenges" value="improvising" required>
+                    <label for="q10c"> By improvising and thinking on your feet</label>
+                </div>
+            </div>
+          
+
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+
+            
+   
+
+
+</body>
+</html>

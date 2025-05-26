@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f3f9; /* Light lilac background */
+    margin: 0;
+    padding: 20px;
+    color: #4a4a4a; /* Neutral dark grey text color */
+}
+
+/* Container Styles */
+div {
+    max-width: 700px; /* Center the form with a comfortable width */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background for the form */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border: 1px solid #e0dce0; /* Light lilac border */
+}
+
+/* Form Heading */
+h1 {
+    text-align: center;
+    color: #7b5171; /* Lilac-based heading color */
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Question Styles */
+div > div {
+    margin-bottom: 15px; /* Space between questions */
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0dce0; /* Light border to separate questions */
+}
+
+/* Label Styles */
+label {
+    font-size: 16px;
+    margin: 10px 0; /* Space between options */
+    cursor: pointer; /* Indicate that label is clickable */
+    display: inline-block;
+}
+
+/* Hide Radio Buttons Visually but Keep for Validation */
+input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Custom Radio Button Styles */
+input[type="radio"] + label:before {
+    content: ''; /* Empty content for the custom radio button */
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 2px solid #7b5171; /* Lilac border */
+    border-radius: 50%; /* Circular shape */
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    vertical-align: middle;
+}
+
+/* Show Tick for Selected Option */
+input[type="radio"]:checked + label:before {
+    background-color: #7b5171; /* Fill with lilac color */
+    border-color: #7b5171; /* Match the border color */
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="white"%3E%3Cpath d="M6.173 12.414a.5.5 0 0 1-.697.018l-3.5-3.5a.5.5 0 1 1 .707-.708l3.146 3.146 7.146-7.146a.5.5 0 0 1 .708.708l-7.5 7.5z"/%3E%3C/svg%3E');
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Button Styles */
+button {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #7b5171; /* Button lilac color */
+    color: #ffffff; /* White text for the button */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #5c3c56; /* Slightly darker lilac on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    div {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}

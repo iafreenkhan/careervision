@@ -1,0 +1,109 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f3f9; /* Light lilac background */
+    margin: 0;
+    padding: 20px;
+    color: #4a4a4a; /* Neutral dark grey text color */
+}
+
+/* Container Styles */
+div {
+    max-width: 700px; /* Center the form with a comfortable width */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background for the form */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border: 1px solid #e0dce0; /* Light lilac border */
+}
+
+/* Form Heading */
+h1 {
+    text-align: center;
+    color: #7b5171; /* Lilac-based heading color */
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Question Styles */
+div > div {
+    margin-bottom: 15px; /* Space between questions */
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0dce0; /* Light border to separate questions */
+}
+
+/* Label Styles */
+label {
+    font-size: 16px;
+    margin: 10px 0; /* Space between options */
+    cursor: pointer; /* Indicate that label is clickable */
+    display: inline-block;
+}
+
+/* Custom Radio Buttons */
+input[type="radio"] {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    appearance: none; /* Remove default styles */
+    border: 2px solid #7b5171; /* Lilac border */
+    border-radius: 50%; /* Circular shape */
+    outline: none;
+    cursor: pointer;
+    background-color: #ffffff; /* White background */
+    vertical-align: middle;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Selected State */
+input[type="radio"]:checked {
+    background-color: #7b5171; /* Fill with lilac color */
+    box-shadow: 0 0 0 4px rgba(123, 81, 113, 0.2); /* Subtle glow effect */
+}
+
+/* Button Styles */
+button {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #7b5171; /* Button lilac color */
+    color: #ffffff; /* White text for the button */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+button:hover {
+    background-color: #5c3c56; /* Slightly darker lilac on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    div {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High School Pathway</title>
+    <link rel="stylesheet" href="ug.css">
+</head>
+<body>
+
+    <!-- Container for the Survey Form -->
+    <div>
+        <h1>High School Pathway</h1>
+        <!--<form id="surveyForm" method="POST" action="http://127.0.0.1:5000/recommend">-->
+            <form action="http://127.0.0.1:5000/recommend" method="POST">
+
+            <!-- Question: Stream Selection -->
+            <div>
+                <label>What stream are you studying?</label>
+                <div>
+                    <input type="radio" id="streamScience" name="stream" value="science" required>
+                    <label for="streamScience">Science</label>
+                </div>
+                <div>
+                    <input type="radio" id="streamCommerce" name="stream" value="commerce" required>
+                    <label for="streamCommerce">Commerce</label>
+                </div>
+                <div>
+                    <input type="radio" id="streamArts" name="stream" value="arts" required>
+                    <label for="streamArts">Arts</label>
+                </div>
+            </div>
+
+            <!-- Science Questions -->
+            <div id="scienceQuestions" style="display: none;">
+                <h2>Science Questions</h2>
+                <div>
+                    <label>1.Are you more interested in Mathematics or Biology?</label>
+                    <div>
+                        <input type="radio" name="mathBio" value="math">
+                        <label>Mathematics</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="mathBio" value="bio">
+                        <label>Biology</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="mathBio" value="both">
+                        <label>Both</label>
+                    </div>
+                </div>
+                <div>
+                    <label>2.Do you prefer working in a lab or solving technical problems?</label>
+                    <div>
+                        <input type="radio" name="labTech" value="lab">
+                        <label>Working in a lab</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="labTech" value="tech">
+                        <label>Solving technical problems</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="labTech" value="both">
+                        <label>Exploring both</label>
+                    </div>
+                </div>
+                <div>
+                    <label>3.Are you interested in technology and programming?</label>
+                    <div>
+                        <input type="radio" name="techProg" value="yes">
+                        <label>Yes, very much</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="techProg" value="somewhat">
+                        <label>Somewhat</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="techProg" value="no">
+                        <label>Not at all</label>
+                    </div>
+                </div>
+                <div>
+                    <label>4.Would you enjoy helping people directly through healthcare?</label>
+                    <div>
+                        <input type="radio" name="healthcare" value="yes">
+                        <label>Yes, definitely</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="healthcare" value="maybe">
+                        <label>Maybe</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="healthcare" value="no">
+                        <label>No</label>
+                    </div>
+                </div>
+                <div>
+                    <label>5.Do you want to pursue research or practical work?</label>
+                    <div>
+                        <input type="radio" name="researchPractical" value="research">
+                        <label>Research</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="researchPractical" value="practical">
+                        <label>Practical work</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="researchPractical" value="both">
+                        <label>Both</label>
+                    </div>
+                </div>
+                <div>
+                    <label>6.Are you interested in environmental science and sustainability?</label>
+                    <div>
+                        <input type="radio" name="enviroScience" value="yes">
+                        <label>Yes, definitely</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="enviroScience" value="somewhat">
+                        <label>Somewhat</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="enviroScience" value="no">
+                        <label>No</label>
+                    </div>
+                </div>
+                
+                   
+                <div>
+                    <label>7.What specific subject in science are you most interested in?</label>
+                    <div>
+                        <input type="radio" name="scienceSubject" value="physics">
+                        <label>Physics</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="scienceSubject" value="chemistry">
+                        <label>Chemistry</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="scienceSubject" value="biology">
+                        <label>Biology</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="scienceSubject" value="all">
+                        <label>All</label>
+                    </div>
+                </div>
+                <div>
+                    <label>8.Do you prefer to work on projects that make a significant impact on society?</label>
+                    <div>
+                        <input type="radio" name="impactSociety" value="yes">
+                        <label>Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="impactSociety" value="maybe">
+                        <label>Maybe</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="impactSociety" value="no">
+                        <label>No</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Commerce Questions -->
+            <div id="commerceQuestions" style="display: none;">
+                <h2>Commerce Questions</h2>
+                <div>
+                    <label>1.Are you interested in business and entrepreneurship?</label>
+                    <div>
+                        <input type="radio" name="businessInterest" value="yes">
+                        <label>Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="businessInterest" value="maybe">
+                        <label>Maybe</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="businessInterest" value="no">
+                        <label>No</label>
+                    </div>
+                </div>
+                <div>
+                    <label>2.Do you enjoy working with numbers and finance?</label>
+                    <div>
+                        <input type="radio" name="finance" value="yes">
+                        <label>Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="finance" value="somewhat">
+                        <label>Somewhat</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="finance" value="no">
+                        <label>Not at all</label>
+                    </div>
+                </div>
+                <div>
+                    <label>3.Are you interested in studying laws and regulations?</label>
+                    <div>
+                        <input type="radio" name="lawsRegulations" value="yes">
+                        <label>Yes, very much</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="lawsRegulations" value="aLittle">
+                        <label>A little</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="lawsRegulations" value="no">
+                        <label>Not at all</label>
+                    </div>
+                </div>
+                <div>
+                    <label>4.Would you like to manage companies and lead teams?</label>
+                    <div>
+                        <input type="radio" name="manageTeams" value="yes">
+                        <label>Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="manageTeams" value="maybe">
+                        <label>Maybe</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="manageTeams" value="no">
+                        <label>No</label>
+                    </div>
+                </div>
+                <div>
+                    <label>5.Do you enjoy learning about economics and markets?</label>
+                    <div>
+                        <input type="radio" name="economicsMarkets" value="yes">
+                        <label>Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="economicsMarkets" value="somewhat">
+                        <label>Somewhat</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="economicsMarkets" value="no">
+                        <label>No</label>
+                    </div>
+                </div>
+                <div>
+                    <label>6.Are you interested in marketing and advertising?</label>
+                    <div>
+                        <input type="radio" name="marketing" value="yes">
+                        <label>Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="marketing" value="somewhat">
+                        <label>Somewhat</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="marketing" value="no">
+                        <label>No</label>
+                    </div>
+                </div>
+                <div>
+                    <label>7.Would you like to pursue a career in banking or financial services?</label>
+                    <div>
+                        <input type="radio" name="banking" value="yes">
+                        <label>Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="banking" value="maybe">
+                        <label>Maybe</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="banking" value="no">
+                        <label>No</label>
+                    </div>
+                </div>
+                
+                <div>
+                    <label>8.Do you have an interest in entrepreneurship and starting your own business?</label>
+                    <div>
+                        <input type="radio" name="entrepreneurship" value="yes">
+                        <label>Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="entrepreneurship" value="maybe">
+                        <label>Maybe</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="entrepreneurship" value="no">
+                        <label>No</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Arts Questions -->
+            <div id="artsQuestions" style="display: none;">
+                <h2>Arts Questions</h2>
+                <div>
+                    <label>1.Are you interested in expressing yourself through arts and culture?</label>
+                    <div>
+                        <input type="radio" name="artsCulture" value="yes">
+                        <label>Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="artsCulture" value="somewhat">
+                        <label>Somewhat</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="artsCulture" value="no">
+                        <label>No</label>
+                    </div>
+                </div>
+                <div>
+                    <label>2.Do you enjoy studying history and learning about the past?</label>
+                    <div>
+                        <input type="radio" name="history" value="yes">
+                        <label>Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="history" value="maybe">
+                        <label>Maybe</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="history" value="no">
+                        <label>No</label>
+                    </div>
+                </div>
+                <div>
+                    <label>3.Are you interested in psychology or understanding human behavior?</label>
+                    <div>
+                        <input type="radio" name="psychology" value="yes">
+                        <label>Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="psychology" value="somewhat">
+                        <label>Somewhat</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="psychology" value="no">
+                        <label>No</label>
+                    </div>
+                </div>
+                <div>
+                    <label>4.Would you like to work in media or entertainment?</label>
+                    <div>
+                        <input type="radio" name="mediaEntertainment" value="yes">
+                        <label>Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="mediaEntertainment" value="maybe">
+                        <label>Maybe</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="mediaEntertainment" value="no">
+                        <label>No</label>
+                    </div>
+                </div>
+                <div>
+                    <label>5.Would you enjoy working in creative industries such as design or fashion?</label>
+                    <div>
+                        <input type="radio" name="creativeIndustries" value="yes">
+                        <label>Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="creativeIndustries" value="maybe">
+                        <label>Maybe</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="creativeIndustries" value="no">
+                        <label>No</label>
+                    </div>
+                </div>
+                <div>
+                    <label>6.Are you interested in teaching or mentoring others in creative fields?</label>
+                    <div>
+                        <input type="radio" name="teachingCreative" value="yes">
+                        <label>Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="teachingCreative" value="maybe">
+                        <label>Maybe</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="teachingCreative" value="no">
+                        <label>No</label>
+                    </div>
+                </div>
+                <div>
+                    <label>7.Would you be interested in global or international arts and cultures?</label>
+                    <div>
+                        <input type="radio" name="globalArts" value="yes">
+                        <label>Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="globalArts" value="maybe">
+                        <label>Maybe</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="globalArts" value="no">
+                        <label>No</label>
+                    </div>
+                </div>
+                <div>
+                    <label>8.Do you have an interest in cultural heritage and preservation?</label>
+                    <div>
+                        <input type="radio" name="culturalHeritage" value="yes">
+                        <label>Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="culturalHeritage" value="maybe">
+                        <label>Maybe</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="culturalHeritage" value="no">
+                        <label>No</label>
+                    </div>
+                </div>
+</div>
+           
+           <!--<form action="http://127.0.0.1:5000/recommend" method="POST">-->
+                <!-- Submit Button -->
+                <button type="submit">Submit</button>
+           </form>
+            
+    </div>
+
+    <script>
+        // Dynamic form handling
+        document.querySelectorAll('input[name="stream"]').forEach(input => {
+            input.addEventListener('change', event => {
+                const stream = event.target.value;
+
+                // Hide all sections
+                document.getElementById('scienceQuestions').style.display = 'none';
+                document.getElementById('commerceQuestions').style.display = 'none';
+                document.getElementById('artsQuestions').style.display = 'none';
+
+                // Remove required from all radio buttons
+                document.querySelectorAll('#scienceQuestions input, #commerceQuestions input, #artsQuestions input')
+                    .forEach(input => input.required = false);
+
+                // Show selected section and add required
+                if (stream === 'science') {
+                    document.getElementById('scienceQuestions').style.display = 'block';
+                    document.querySelectorAll('#scienceQuestions input').forEach(input => input.required = true);
+                } else if (stream === 'commerce') {
+                    document.getElementById('commerceQuestions').style.display = 'block';
+                    document.querySelectorAll('#commerceQuestions input').forEach(input => input.required = true);
+                } else if (stream === 'arts') {
+                    document.getElementById('artsQuestions').style.display = 'block';
+                    document.querySelectorAll('#artsQuestions input').forEach(input => input.required = true);
+                }
+            });
+        });
+    </script>
+        
+
+</body>
+</html>
+

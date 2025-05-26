@@ -1,0 +1,210 @@
+/* Image Carousel */
+/* Custom Purple Navbar */
+.logo {
+    height: 50px; /* Adjust logo height */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between logo and text */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+.fancy-text {
+    font-family: "Copperplate", "Papyrus", "Brush Script MT", cursive; /* Fancy built-in fonts */
+    font-size: 28px; /* Large and readable */
+    font-weight: bold; /* Make it bold */
+    color: #ffffff; /* White text for contrast */
+    text-transform: uppercase; /* Uppercase for a professional look */
+    letter-spacing: 2px; /* Spaced letters for elegance */
+    margin-left: 10px; /* Space between logo and text */
+}
+
+.custom-purple {
+    background-color: #6a0dad !important; /* Dark Purple */
+}
+
+/* Change Navbar Links to Light Purple */
+.custom-purple .nav-link {
+    color: #f3e5f5 !important; /* Light purple text */
+}
+
+.custom-purple .nav-link:hover {
+    color: #ffffff !important; /* White text on hover */
+}
+
+
+.carousel-item img {
+    width: 100%; /* Full width for responsiveness */
+    height: 500px; /* Fixed height to ensure uniformity */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+}
+
+/* Center the text in the carousel */
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(46, 26, 71, 0.7); /* Dark Purple Transparent Background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.carousel-caption h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #F1E6FF; /* Light text for readability */
+    margin-bottom: 10px;
+}
+
+.carousel-caption p {
+    font-size: 1.25rem;
+    color: #F1E6FF;
+    margin-bottom: 20px;
+}
+
+/* Pathway buttons on the carousel */
+.pathway-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.pathway-buttons .btn {
+    padding: 10px 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #6A0DAD; /* Deep Purple */
+    color: #F1E6FF; /* White text */
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.pathway-buttons .btn:hover {
+    background-color: #9B30FF; /* Bright Purple */
+}
+
+/* About Us Section */
+#about {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff; /* Dark Purple Background */
+}
+
+#about img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+#about h2 {
+    font-size: 2rem;
+    color: #C084FC; /* Accent Purple */
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.1rem;
+    color: #000000; /* Light text */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* Contact Us Section */
+#contact {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #2E1A47; /* Dark Purple */
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact li {
+    margin: 15px 0;
+    color: #F1E6FF; /* Light Purple */
+    padding: 5px 0;
+}
+
+#contact li i {
+    margin-right: 10px;
+    color: #C084FC; /* Accent Purple */
+}
+
+/* Rectangular Box for Testimonials */
+.testimonial-box {
+    background-color: #f8f9fa; /* Light grey background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 40px auto;
+    width: 80%;
+    text-align: center;
+}
+
+/* Purple Heading */
+.testimonial-heading {
+    color: #C084FC;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #2E1A47;
+    color: #F1E6FF;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer Contact Us Section */
+.footer-contact {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.footer-contact div {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-contact h3 {
+    font-size: 1.5rem;
+    color: #C084FC; /* Accent Purple */
+    margin-bottom: 10px;
+}
+
+.footer-contact p,
+.footer-contact ul {
+    font-size: 1rem;
+    color: #F1E6FF; /* Light text */
+}
+
+/* Copyright */
+.footer-copyright {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* Body Padding */
+body {
+    padding: 0 20px;
+    background-color: #FFFFFF; /* Dark Purple Background */
+    color: #000000; /* Light Text */
+}
